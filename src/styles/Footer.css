@@ -1,0 +1,53 @@
+/* Footer 기본 스타일 */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-contact {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* 소셜 아이콘 스타일 */
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
+/* 하단 저작권 정보 */
+.footer-bottom {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* 작은 화면에서 소셜 아이콘 가로로 배치 */
+@media (max-width: 768px) {
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}

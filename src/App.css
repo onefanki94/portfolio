@@ -1,0 +1,160 @@
+
+
+/* header 스타일 */
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url('path/to/your/image.jpg'); /* 이미지 경로 */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header-text {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header-text h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* 헤더 네비게이션 스타일 */
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;  /* 메뉴 항목들을 중앙에 정렬 */
+  position: absolute;
+  bottom: 30px;  /* 메뉴를 화면 하단에 위치 */
+  margin: 0;
+}
+
+.header-nav ul li {
+  margin: 0 20px;  /* 각 메뉴 항목 간의 간격 */
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: white;  /* 기본 텍스트 색상 */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.header-nav ul li a:hover {
+  color: #ff6347; /* 호버 시 색상 변경 */
+  transform: scale(1.1);  /* 호버 시 크기 약간 커짐 */
+}
+
+/* 추가적인 스타일 (필요시) */
+.header-nav ul li a:active {
+  color: #d32f2f;  /* 클릭했을 때 색상 */
+}
+
+/* 스크롤되는 섹션 */
+section {
+  padding: 60px 20px;
+}
+
+#home {
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centered-container {
+  text-align: center;
+}
+
+/* About 섹션 */
+.about-container {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.about-info-item .label {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.about-info-item .value {
+  margin-left: 10px;
+  color: #555;
+}
+
+/* Skills 섹션 */
+.skill-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  border-radius: 5px;
+}
+
+.progress-text {
+  text-align: center;
+  margin-top: 5px;
+}

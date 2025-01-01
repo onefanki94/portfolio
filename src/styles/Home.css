@@ -1,0 +1,67 @@
+/* 전체 페이지 스타일 */
+.min-h-screen {
+  min-height: 100vh;
+  background-image: url('../assets/img01.png'); /* 그라데이션 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+  width: 100%;
+  max-width: 1200px; /* 최대 너비 설정 */
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 15px;
+}
+
+/* 텍스트 스타일 */
+.text-4xl {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d3748;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* 서브 타이틀 스타일 */
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* 구분선 스타일 */
+.hr-div {
+  width: 100px;
+  height: 3px;
+  background-color: #4e73df;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* 하위 텍스트에 약간의 여백을 추가 */
+h3 {
+  margin: 10px 0;
+}
+
+/* 모바일 반응형 디자인 */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    padding: 30px 15px;
+  }
+}
